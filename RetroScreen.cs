@@ -60,7 +60,7 @@ public class RetroScreen : MonoBehaviour
 
     void OnRenderImage(RenderTexture source, RenderTexture destination)
     {
-        // Scene penceresinde çalışıp çalışmadığını kontrol eder
+        
         bool isSceneCamera = Camera.current != null && Camera.current.cameraType == CameraType.SceneView;
 
         if (psxMaterial != null && (!isSceneCamera || showInSceneView))
